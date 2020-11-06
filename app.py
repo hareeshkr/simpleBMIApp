@@ -8,8 +8,8 @@ weight = tk.StringVar()
 height = tk.StringVar()
 
 def calc():
-    weight = int(weight_entry.get())
-    height = int(height_entry.get())
+    weight = float(weight_entry.get())
+    height = float(height_entry.get())
     bmi = weight / (height * height)
     tk.Label(root, text="Your BMI is " + str(bmi)).grid(row="3", column="0")
 
